@@ -136,3 +136,11 @@ main{
     top: 85px;
     z-index: 2;
 }
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+th {
+    text-align: left;
+  }

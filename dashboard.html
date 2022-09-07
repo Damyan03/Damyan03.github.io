@@ -9,16 +9,47 @@
   <title>My profile</title>
 </head>
 
+<style>
+  .menu{
+   background-image: linear-gradient(to right, transparent, rgb(255, 200, 255), transparent);
+   border-top-style: double;
+   border-top-color: violet;
+   border-bottom-style: double;
+   border-bottom-color: violet;
+   margin-left: 325px;
+   margin-right: auto;
+   opacity: 80%;
+   font-size: 20px;
+   width: 80%;
+  }
+</style>
 <body
   style="background-image:url(background/dashboard-background.jpg)">
   <div class="sidenav">
-    <h2 id="sidenav_title">Links</h2>
-    <nav>
-      <a href="profile.html" class="sidenav_links">Profile</a>
-      <a href="blog.html" class="sidenav_links">Blog</a>
-      <a href="dashboard.html" class="sidenav_links">Dashboard</a>
-      <a href="faq.html" class="sidenav_links">FAQ</a>
+    <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
+    <!-- <hr id="nav_hr">-->
+    <h2 id="sidenav_title">Navigation</h2>
+    <nav class="nav_links">
+      <a href="profile.html" class="sidenav_links" style="background-image:linear-gradient(rgb(184, 255, 196),rgb(89, 255, 120))">Profile</a>
+      <a href="blog.html" class="sidenav_links" style="background-image:linear-gradient(rgb(172, 208, 255),rgb(80, 156, 255))">Blog</a>
+      <a href="dashboard.html" class="sidenav_links" style="background-image:linear-gradient(rgb(201, 201, 201),rgb(124, 124, 124))">Dashboard</a>
+      <a href="faq.html" class="sidenav_links" style="background-image:linear-gradient(rgb(255, 184, 184),rgb(255, 104, 104))">FAQ</a>
     </nav>
+    <h2 id="sidenav_aside_title">Aside links</h2>
+    <ul class="nav_links">
+      <a href="https://hz.nl/en" class="sidenav_aside_links " target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+        <li>HZ Website</li>
+      </a>
+      <a href="https://portal.hz.nl/en/" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+        <li>HZ Portal</li>
+      </a>
+      <a href="https://learn.hz.nl/my/" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+        <li>HZ Learn</li>
+      </a>
+      <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+        <li>HZ Webshop</li>
+      </a>
+    </ul>
   </div>
   <header>
     <h1>My profile</h1>
@@ -27,7 +58,38 @@
   <main>
     <div class="menu">
       <article>
-        <h2>Test</h2>
+        <table>
+          <tr>
+            <th>Assessment</th>
+            <th>Form</th>
+            <th>EC</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Program- & Career Orientation (PCO)</td>
+            <td>Portfolio Based Assessment</td>
+            <td>2.5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Computer Science Basics (CBA)</td>
+            <td>written exam</td>
+            <td>5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Programming Basics (PBA) </td>
+            <td>Case study exam</td>
+            <td>5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Personal professional development: Exploration (PPD-E)</td>
+            <td>Criterium focused assessment based on portfolio</td>
+            <td>5</td>
+            <td></td>
+          </tr>
+        </table>
       </article>
     </div>
   </main>
