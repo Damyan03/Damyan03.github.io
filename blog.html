@@ -9,43 +9,52 @@
   <title>My profile</title>
 </head>
 <style>
-  .menu{
-   background-image: linear-gradient(to right, transparent, rgb(133, 206, 255), transparent);
-   border-top-style: double;
-   border-top-color: blue;
-   border-bottom-style: double;
-   border-bottom-color: blue;
-   margin-left: 325px;
-   margin-right: auto;
-   opacity: 80%;
-   font-size: 20px;
-   width: 80%;
+  .menu {
+    background-image: linear-gradient(to right, transparent, rgb(133, 206, 255), transparent);
+    border-top-style: double;
+    border-top-color: blue;
+    border-bottom-style: double;
+    border-bottom-color: blue;
+    margin-left: 325px;
+    margin-right: auto;
+    opacity: 80%;
+    font-size: 20px;
+    width: 80%;
   }
 </style>
-<body
-  style="background-image:url(background/blog-background.jpg);background-position-x: 90px">
+
+<body style="background-image:url(background/blog-background.jpg);background-position-x: 90px">
   <div class="sidenav">
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
     <!-- <hr id="nav_hr">-->
     <h2 id="sidenav_title">Navigation</h2>
     <nav class="nav_links">
-      <a href="profile.html" class="sidenav_links" style="background-image:linear-gradient(rgb(184, 255, 196),rgb(89, 255, 120))">Profile</a>
-      <a href="blog.html" class="sidenav_links" style="background-image:linear-gradient(rgb(172, 208, 255),rgb(80, 156, 255))">Blog</a>
-      <a href="dashboard.html" class="sidenav_links" style="background-image:linear-gradient(rgb(201, 201, 201),rgb(124, 124, 124))">Dashboard</a>
-      <a href="faq.html" class="sidenav_links" style="background-image:linear-gradient(rgb(255, 184, 184),rgb(255, 104, 104))">FAQ</a>
+      <a href="profile.html" class="sidenav_links"
+        style="background-image:linear-gradient(rgb(184, 255, 196),rgb(89, 255, 120))">Profile</a>
+      <a href="blog.html" class="sidenav_links"
+        style="background-image:linear-gradient(rgb(172, 208, 255),rgb(80, 156, 255))">Blog</a>
+      <a href="dashboard.html" class="sidenav_links"
+        style="background-image:linear-gradient(rgb(201, 201, 201),rgb(124, 124, 124))">Dashboard</a>
+      <a href="faq.html" class="sidenav_links"
+        style="background-image:linear-gradient(rgb(255, 184, 184),rgb(255, 104, 104))">FAQ</a>
     </nav>
     <h2 id="sidenav_aside_title">Aside links</h2>
     <ul class="nav_links">
-      <a href="https://hz.nl/en" class="sidenav_aside_links " target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+      <a href="https://hz.nl/en" class="sidenav_aside_links " target="_blank"
+        style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
         <li>HZ Website</li>
       </a>
-      <a href="https://portal.hz.nl/en/" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+      <a href="https://portal.hz.nl/en/" class="sidenav_aside_links" target="_blank"
+        style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
         <li>HZ Portal</li>
       </a>
-      <a href="https://learn.hz.nl/my/" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+      <a href="https://learn.hz.nl/my/" class="sidenav_aside_links" target="_blank"
+        style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
         <li>HZ Learn</li>
       </a>
-      <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097" class="sidenav_aside_links" target="_blank" style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
+      <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
+        class="sidenav_aside_links" target="_blank"
+        style="background-image:linear-gradient(rgb(238, 238, 238),rgb(218, 218, 218))">
         <li>HZ Webshop</li>
       </a>
     </ul>
@@ -57,8 +66,31 @@
   <main>
     <div class="menu">
       <article>
-        <h2>Test</h2>
+        <h2>Can we use the definitions to decide how to nest "section" and "article"?</h2>
+        <p>No, we cannot! So, you will find HTML pages with "section" elements containing "article" elements, and
+          "article" elements containing "section" elements.</p>
+        <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">
+          <p>Read more...</p>
+        </a>
       </article>
+      <article>
+        <h2>"article" vs "section": How To Choose The Right One</h2>
+        <p>HTML passes two related but distinct information to user devices. The first is the visual presentation
+          information, which tells the device how to display the document by default. The second is known as semantic
+          information or, simply, semantics.</p>
+        <a href="https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/">
+          <p>Read more...</p>
+        </a>
+      </article>
+      <article>
+        <h2>Difference between "article" tag and "section" tag</h2>
+        <p>Both the tags are semantics tag in HTML 5. In this article, we will discuss the behavior of the
+        "article" and "section" tag. Both the "article" and "section" tags are represented in a similar way but used for
+                some meaning, that meaning is for the browsers and the developers.</p>
+                <a href="https://www.geeksforgeeks.org/difference-between-article-tag-and-section-tag/">
+                  <p>Read more...</p>
+                </a>
+            </article>
     </div>
   </main>
 </body>
