@@ -1,6 +1,3 @@
-html{
-    height: 100%;
-}
 header {
     background-image: url(https://media.istockphoto.com/vectors/seamless-hand-drawn-tropical-vector-pattern-with-bright-hibiscus-and-vector-id677928238?k=20&m=677928238&s=612x612&w=0&h=gfdsg46-LIudmEA_IlwMVz5bljGDRgysZRUfAhRAG2s=);
     height: 100px;
@@ -113,20 +110,59 @@ ul a:hover {
     opacity: 80%;
     font-size: 20px;
     width: 80%;
+}
+#self_img {
+    position:absolute;
+    top: 60px;
+    left: 1000px;
+    width: 20%;
+    border: 5px solid white;
+    z-index: 1;
 }*/
 .menu {
-    background-image: linear-gradient(to right, transparent, lightgreen, transparent);
-    border-top-style: double;
-    border-top-color: green;
-    border-bottom-style: double;
-    border-bottom-color: green;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 80%;
+    display:inline-block;
+    background-color: rgba(144, 238, 144, 0.5);
+    border: green double;
+    border-radius: 10px;
     font-size: 20px;
-    width: 80%;
+    width: 50%;
+}
+#menu_right{
+    position: relative;
+    left:10%;
+    bottom: 40%;
+}
+#menu_left{
+    position: relative;
+    bottom: 55%;
 }
 
+#menu_mid{
+    position: relative;
+    left: 25%;
+    top: 30%;
+}
+.info_block{
+    height: 500px;
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+img{
+    display:inline-block;
+    border: 5px solid white;
+    height: calc(100% - 10px);
+}
+
+#self_img {
+    margin-left: 50px;
+    width: 30%;
+}
+
+#party_img{
+    width: 40%;
+    margin-left: 100px;
+}
 p {
     text-align: center;
 }
@@ -137,22 +173,9 @@ body {
     background-attachment: fixed;
 }
 
-/*cant use background image with files?*/
-
-#self_img {
-    position:absolute;
-    top: 70px;
-    left: 200px;
-    width: 20%;
-    border: 5px solid white;
-    transform:rotate(-10deg);
-    z-index: 1;
-}
-
-
 main {
     position: absolute;
-    height: calc(100% - 112px - 40px);
+    height: 1620px;
     width: calc(100% - 262px - 40px);
     left: 262px;
     top: 104px;
@@ -165,6 +188,7 @@ main {
     margin-left: 5px;
     margin-right: 4px;
     margin-top: 10px;
+    border: none;
 }
 
 
@@ -180,4 +204,5 @@ th {
 ul {
     display: table;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
