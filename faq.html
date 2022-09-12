@@ -14,28 +14,16 @@
   .menu {
     background-color: rgba(255, 212, 133, 0.5);
     border: double orange;
-    position: relative;
-    left: 18%;
-    top: 6%;
-  }
-
-  #faq {
-    font-weight: bold;
-    margin-left: 25px;
   }
 </style>
 
 <body style="background-image:url(background/background-faq.jpg);background-position-x: 90px;">
 
-  <header>
-    <h1>FAQ</h1>
-  </header>
-
   <div class="sidenav">
 
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
 
-    <h2 id="sidenav_title" style="margin-top:30px;">Navigation</h2>
+    <h2 class="sidenav_title">Navigation</h2>
     <nav class="sidenav_links">
       <a href="profile.html" id="profile">Profile</a>
       <a href="blog.html" id="blog">Blog</a>
@@ -43,61 +31,62 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <h2 id="sidenav_title" style="margin-top:50px;">Aside links</h2>
-    <ul class="sidenav_aside_links">
-      <a href="https://hz.nl/en" target="_blank">
-        <li>HZ Website</li>
-      </a>
-      <a href="https://portal.hz.nl/en/" target="_blank">
-        <li>HZ Portal</li>
-      </a>
-      <a href="https://learn.hz.nl/my/" target="_blank">
-        <li>HZ Learn</li>
-      </a>
+    <h2 class="sidenav_aside_title">Aside links</h2>
+    <nav class="sidenav_aside_links">
+      <a href="https://hz.nl/en" target="_blank">HZ Website</a>
+      <a href="https://portal.hz.nl/en/" target="_blank">HZ Portal</a>
+      <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
-        target="_blank">
-        <li>HZ Webshop</li>
-      </a>
-    </ul>
+        target="_blank">HZ Webshop</a>
+    </nav>
+
+    <a href="index.html" class="homepage_button">Homepage</a>
 
   </div>
+  
+  <header>
+    <h1>FAQ</h1>
+  </header>
+
   <main>
-    <div class="menu">
-      <h2>FAQ</h2>
-      <article>
-        <p>Q: Who can I message regarding financial matters in HZ.
-          <br>A: You can message fin@hz.nl
-        </p>
-      </article>
-      <article>
-        <p>Q: Where can I find the timetable?
-          <br>A: You can find it on MyHZ where you can add it on the sidebar.
-        </p>
-      </article>
-      <article>
-        <p>Q: Do I get water bottle.
-          <br>A: Yes
-        </p>
-      </article>
-      <article>
-        <p>Q: How can you print a document from your laptop at HZ?
-          <br>A: Upload all the files you would like to print to <a href="https://print.hz.nl/">HZ Print</a>, then
-          choose the options you would like then submit your print request.
-          <br>Go to a printer in the building, scan your card then select the printing option.
-        </p>
-      </article>
-      <article>
-        <p>Q: How can you scan a document a send it to your laptop at HZ?
-        <br>A: Information regarding document scanning available <a
+    <div class="info_block">
+
+      <div class="menu">
+        <h2>FAQ</h2>
+        <article>
+          <p>Q: Who can I message regarding financial matters in HZ.
+            <br>A: You can message fin@hz.nl
+          </p>
+        </article>
+        <article>
+          <p>Q: Where can I find the timetable?
+            <br>A: You can find it on MyHZ where you can add it on the sidebar.
+          </p>
+        </article>
+        <article>
+          <p>Q: Do I get water bottle.
+            <br>A: Yes
+          </p>
+        </article>
+        <article>
+          <p>Q: How can you print a document from your laptop at HZ?
+            <br>A: Upload all the files you would like to print to <a href="https://print.hz.nl/">HZ Print</a>, then
+            choose the options you would like then submit your print request.
+            <br>Go to a printer in the building, scan your card then select the printing option.
+          </p>
+        </article>
+        <article>
+          <p>Q: How can you scan a document a send it to your laptop at HZ?
+            <br>A: Information regarding document scanning available <a
             href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8a56d47dcbd0ffb9cdf78f20b&origin=searchPreview">Here</a>
-        </p>
-      </article>
+          </p>
+        </article>
       <article>
         <p>Q: How can I buy something (like when I sign up for the IT introduction event at Friday 16/09) on the HZ web
           shop?
           <br>A: You can do that by going to the <a
-            href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097">HZ
-            Webshop</a> page.
+          href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097">HZ
+          Webshop</a> page.
         </p>
       </article>
       <article>
@@ -116,6 +105,7 @@
         </p>
       </article>
     </div>
+  </div>
   </main>
 </body>
 

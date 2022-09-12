@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,181 +9,188 @@
   <link href="Styles/styles.css" rel="stylesheet" />
   <title>Damyan | Blog</title>
 </head>
+
 <style>
   .menu {
     background-color: rgba(133, 206, 255, 0.5);
     border: double blue;
-    position: relative;
-    top:20%;
-    left: 1%;
-    width: 32%;
-    vertical-align: top ;
+    vertical-align: top;
   }
-  #discussion{
+
+  #discussion {
     left: auto;
     width: auto;
   }
 
-  #blog {
-    font-weight: bold;
-    margin-left: 25px;
-  }
-  .info_block{
+  .info_block {
     height: auto;
+    gap: 12px;
   }
 </style>
 
 <body style="background-image:url(background/background-blog.jpg);background-position-x: 90px">
-  <header>
-    <h1>Blog</h1>
-  </header>
+
   <div class="sidenav">
+
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
-    <h2 id="sidenav_title" style="margin-top:30px;">Navigation</h2>
+
+    <h2 class="sidenav_title">Navigation</h2>
     <nav class="sidenav_links">
       <a href="profile.html" id="profile">Profile</a>
       <a href="blog.html" id="blog">Blog</a>
       <a href="dashboard.html" id="dashboard">Dashboard</a>
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
-    <h2 id="sidenav_title" style="margin-top:50px;">Aside links</h2>
-    <ul class="sidenav_aside_links">
-      <a href="https://hz.nl/en" target="_blank">
-        <li>HZ Website</li>
-      </a>
-      <a href="https://portal.hz.nl/en/" target="_blank">
-        <li>HZ Portal</li>
-      </a>
-      <a href="https://learn.hz.nl/my/" target="_blank">
-        <li>HZ Learn</li>
-      </a>
+
+    <h2 class="sidenav_aside_title">Aside links</h2>
+    <nav class="sidenav_aside_links">
+      <a href="https://hz.nl/en" target="_blank">HZ Website</a>
+      <a href="https://portal.hz.nl/en/" target="_blank">HZ Portal</a>
+      <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
-        target="_blank">
-        <li>HZ Webshop</li>
-      </a>
-    </ul>
+        target="_blank">HZ Webshop</a>
+    </nav>
+
+    <a href="index.html" class="homepage_button">Homepage</a>
+
   </div>
+
+  <header>
+    <h1>Blog</h1>
+  </header>
+
   <main>
+
     <div class="info_block">
       <div class="menu" id="discussion">
         <article>
           <h2>"article" vs "section": How To Choose The Right One</h2>
-          <p>Both the tags are semantics tag in HTML 5. HTML passes two related but distinct information to user devices. The first is the visual presentation
+          <p>Both the tags are semantics tag in HTML 5. HTML passes two related but distinct information to user
+            devices. The first is the visual presentation
             information, which tells the device how to display the document by default. The second is known as semantic
             information or, simply, semantics.</p>
-            <p>Read more: <a href="https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/">"article" vs "section": How To Choose The Right One</p>
+          <p>Read more: <a
+              href="https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/">"article" vs
+              "section": How To Choose The Right One</p>
           </a>
-            <p>Related: <a href="https://www.geeksforgeeks.org/difference-between-article-tag-and-section-tag/">Difference between "article" tag and "section" tag</p>
+          <p>Related: <a href="https://www.geeksforgeeks.org/difference-between-article-tag-and-section-tag/">Difference
+              between "article" tag and "section" tag</p>
           </a>
-            <p>Related: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Can we use the definitions to decide how to nest "section" and "article"?</p>
+          <p>Related: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Can we use the definitions to
+              decide how to nest "section" and "article"?</p>
           </a>
         </article>
       </div>
     </div>
+
     <div class="info_block">
       <div class="menu">
-
         <article>
           <h2>Warhorse Studios</h2>
-          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry veterans.</p>
+          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry
+            veterans.</p>
         </article>
-
-          <article>
-            <h3>Jobs</h3>
-            <ul>
-              <li>Graphics Tools Programmer</li>
-              <li>Internship</li>
-              <li>Programmer</li>
-              <li>Senior Programmer</li>
-              <li>TechOps</li>
-              <li>UI Programmer</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Technologies</h3>
-            <ul>
-              <li>C/C++/Python</li>
-              <li>MS Visual Studio</li>
-              <li>Version-control tools (SVN, Git, Perforce etc.)</li>
-              <li>Scripting languages (ideally Lua)</li>
-              <li>SQL</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Like</h3>
-            <p>The passion they show for their projects has led me to pick them as 1 of my 3 companies.</p>
-          </article>
-      </div>
-      <div class="menu">
 
         <article>
-          <h2>Overwolf</h2>
-          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry veterans.</p>
+          <h3>Jobs</h3>
+          <ul>
+            <li>Graphics Tools Programmer</li>
+            <li>Internship</li>
+            <li>Programmer</li>
+            <li>Senior Programmer</li>
+            <li>TechOps</li>
+            <li>UI Programmer</li>
+          </ul>
         </article>
-
-          <article>
-            <h3>Jobs</h3>
-            <ul style="margin-bottom: 46px;">
-              <li>Data Analyst</li>
-              <li>Senior Back-End Developer</li>
-              <li>Senior Full Stack Web Developer</li>
-              <li>Senior Software Engineer - Client Core</li>
-              <li>Software Engineering Team Lead - CurseForge Core</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Technologies</h3>
-            <ul style="margin-bottom: 46px;">
-              <li>SQL, Node.js, Java, Go, .Net</li>
-              <li>RDBMS (MySQL, Postgres)</li>
-              <li>NoSQL (Redis, ElasticSearch, DynamoDB)</li>
-              <li>C++ ,Win32 APIs</li>
-            </ul>
-          </article>
-
-          <article>
-            <h3>Like</h3>
-            <p>Their friendly work enviornment ensures the prosperity of ones talent.</p>
-          </article>
-      </div>
-      <div class="menu">
 
         <article>
-          <h2>Overwolf</h2>
-          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry veterans.</p>
+          <h3>Technologies</h3>
+          <ul>
+            <li>C/C++/Python</li>
+            <li>MS Visual Studio</li>
+            <li>Version-control tools (SVN, Git, Perforce etc.)</li>
+            <li>Scripting languages (ideally Lua)</li>
+            <li>SQL</li>
+          </ul>
         </article>
 
-          <article>
-            <h3>Jobs</h3>
-            <ul>
-              <li>Data Analyst</li>
-              <li>Senior Back-End Developer</li>
-              <li>Senior Full Stack Web Developer</li>
-              <li>Senior Software Engineer – Client Core</li>
-              <li>Software Engineering Team Lead - CurseForge Core</li>
-            </ul>
-          </article>
+        <article>
+          <h3>Like</h3>
+          <p>The passion they show for their projects has led me to pick them as 1 of my 3 companies.</p>
+        </article>
+      </div>
 
-          <article>
-            <h3>Technologies</h3>
-            <ul>
-              <li>SQL, Node.js, Java, Go, .Net</li>
-              <li>RDBMS (MySQL, Postgres)</li>
-              <li>NoSQL (Redis, ElasticSearch, DynamoDB)</li>
-              <li>C++ ,Win32 APIs</li>
-            </ul>
-          </article>
+      <div class="menu">
+        <article>
+          <h2>Overwolf</h2>
+          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry
+            veterans.</p>
+        </article>
 
-          <article>
-            <h3>Like</h3>
-            <p>Their friendly work enviornment ensures the prosperity of ones talent.</p>
-          </article>
+        <article>
+          <h3>Jobs</h3>
+          <ul style="margin-bottom: 46px;">
+            <li>Data Analyst</li>
+            <li>Senior Back-End Developer</li>
+            <li>Senior Full Stack Web Developer</li>
+            <li>Senior Software Engineer - Client Core</li>
+            <li>Software Engineering Team Lead - CurseForge Core</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Technologies</h3>
+          <ul style="margin-bottom: 46px;">
+            <li>SQL, Node.js, Java, Go, .Net</li>
+            <li>RDBMS (MySQL, Postgres)</li>
+            <li>NoSQL (Redis, ElasticSearch, DynamoDB)</li>
+            <li>C++ ,Win32 APIs</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Like</h3>
+          <p>Their friendly work enviornment ensures the prosperity of ones talent.</p>
+        </article>
+      </div>
+
+      <div class="menu">
+        <article>
+          <h2>Overwolf</h2>
+          <p>Warhorse Studios is a video-game developer founded in 2011 by a handful of intrepid gaming industry
+            veterans.</p>
+        </article>
+
+        <article>
+          <h3>Jobs</h3>
+          <ul>
+            <li>Data Analyst</li>
+            <li>Senior Back-End Developer</li>
+            <li>Senior Full Stack Web Developer</li>
+            <li>Senior Software Engineer – Client Core</li>
+            <li>Software Engineering Team Lead - CurseForge Core</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Technologies</h3>
+          <ul>
+            <li>SQL, Node.js, Java, Go, .Net</li>
+            <li>RDBMS (MySQL, Postgres)</li>
+            <li>NoSQL (Redis, ElasticSearch, DynamoDB)</li>
+            <li>C++ ,Win32 APIs</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Like</h3>
+          <p>Their friendly work enviornment ensures the prosperity of ones talent.</p>
+        </article>
       </div>
     </div>
+    
   </main>
+
 </body>
 
 </html>

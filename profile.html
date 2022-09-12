@@ -11,49 +11,20 @@
 </head>
 
 <style>
-  #profile {
-    font-weight: bold;
-    margin-left: 25px;
-  }
-
   .menu {
     background-color: rgba(144, 238, 144, 0.5);
-    border: green double;
+    border: green solid;
     width: 50%;
-  }
-
-  main{
-    height: 1620px;
-  }
-  #menu_right {
-    position: relative;
-    left: 10%;
-    bottom: 40%;
-  }
-
-  #menu_left {
-    position: relative;
-    bottom: 55%;
-  }
-
-  #menu_mid {
-    position: relative;
-    left: 25%;
-    top: 30%;
   }
 </style>
 
 <body style="background-image: url(background/background-profile.png)">
 
-  <header>
-    <h1>Profile</h1>
-  </header>
-
   <div class="sidenav">
 
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
 
-    <h2 id="sidenav_title" style="margin-top:30px;">Navigation</h2>
+    <h2 class="sidenav_title">Navigation</h2>
     <nav class="sidenav_links">
       <a href="profile.html" id="profile">Profile</a>
       <a href="blog.html" id="blog">Blog</a>
@@ -61,29 +32,28 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <h2 id="sidenav_title" style="margin-top:50px;">Aside links</h2>
-    <ul class="sidenav_aside_links">
-      <a href="https://hz.nl/en" target="_blank">
-        <li>HZ Website</li>
-      </a>
-      <a href="https://portal.hz.nl/en/" target="_blank">
-        <li>HZ Portal</li>
-      </a>
-      <a href="https://learn.hz.nl/my/" target="_blank">
-        <li>HZ Learn</li>
-      </a>
+    <h2 class="sidenav_aside_title">Aside links</h2>
+    <nav class="sidenav_aside_links">
+      <a href="https://hz.nl/en" target="_blank">HZ Website</a>
+      <a href="https://portal.hz.nl/en/" target="_blank">HZ Portal</a>
+      <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
-        target="_blank">
-        <li>HZ Webshop</li>
-      </a>
-    </ul>
+        target="_blank">HZ Webshop</a>
+    </nav>
+
+    <a href="index.html" class="homepage_button">Homepage</a>
 
   </div>
+
+  <header>
+    <h1>Profile</h1>
+  </header>
+
   <main>
 
     <div class="info_block">
-      <img src="img/self-img.jpg" alt="self_img" id="self_img">
-      <div class="menu" id="menu_right">
+      <img src="img/self-img.jpg" alt="self_img" style="width: 30%;">
+      <div class="menu">
         <article>
           <h2>Personal information</h2>
           <p><strong>Name: </strong>Damyan Dimitrov</p>
@@ -94,7 +64,7 @@
     </div>
 
     <div class="info_block">
-      <div class="menu" id="menu_left">
+      <div class="menu">
         <article>
           <p><strong>Interests:</strong></p>
           <ul>
@@ -105,11 +75,11 @@
           </ul>
         </article>
       </div>
-      <img src="img/party-img.jpg" alt="party_img" id="party_img">
+      <img src="img/party-img.jpg" alt="party_img" style="width: 40%;">
     </div>
 
     <div class="info_block">
-      <div class="menu" id="menu_mid">
+      <div class="menu">
         <article>
           <h2>Extra-curricular activities</h2>
           <p>I believe that eventually I will work alongside my studies, but I am uncertain of when I will start.
@@ -121,6 +91,7 @@
     </div>
 
   </main>
+  
 </body>
 
 </html>

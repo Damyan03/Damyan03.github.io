@@ -13,26 +13,16 @@
   .menu {
     background-color: rgba(255, 200, 255, 0.5);
     border: double violet;
-    position: relative;
-    left: 20%;
-    top: 10%;
-  }
-
-  #dashboard {
-    font-weight: bold;
-    margin-left: 25px;
+    width: auto;
   }
 
   table {
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
-  }
-
-  table {
     border-collapse: collapse;
+    text-align: center;
   }
-
   td:hover {
     background-color: rgba(255, 242, 255, 0.5);
   }
@@ -40,18 +30,17 @@
   th {
     text-align: left;
     background-color: rgba(255, 226, 255, 0.5);
+    font-size: 25px;
   }
 
   td {
     border: 1px solid;
   }
 
-  th {
-    font-size: 25px;
-  }
-  h2{
+  article h2{
     margin: 0 auto;
   }
+
   progress{
     width: 100%;
   }
@@ -67,15 +56,11 @@
 
 <body style="background-image:url(background/background-dashboard.jpg)">
 
-  <header>
-    <h1>Dashboard</h1>
-  </header>
-
   <div class="sidenav">
 
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
 
-    <h2 id="sidenav_title" style="margin-top:30px;">Navigation</h2>
+    <h2 class="sidenav_title">Navigation</h2>
     <nav class="sidenav_links">
       <a href="profile.html" id="profile">Profile</a>
       <a href="blog.html" id="blog">Blog</a>
@@ -83,61 +68,61 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <h2 id="sidenav_title" style="margin-top:50px;">Aside links</h2>
-    <ul class="sidenav_aside_links">
-      <a href="https://hz.nl/en" target="_blank">
-        <li>HZ Website</li>
-      </a>
-      <a href="https://portal.hz.nl/en/" target="_blank">
-        <li>HZ Portal</li>
-      </a>
-      <a href="https://learn.hz.nl/my/" target="_blank">
-        <li>HZ Learn</li>
-      </a>
+    <h2 class="sidenav_aside_title">Aside links</h2>
+    <nav class="sidenav_aside_links">
+      <a href="https://hz.nl/en" target="_blank">HZ Website</a>
+      <a href="https://portal.hz.nl/en/" target="_blank">HZ Portal</a>
+      <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
-        target="_blank">
-        <li>HZ Webshop</li>
-      </a>
-    </ul>
+        target="_blank">HZ Webshop</a>
+    </nav>
+
+    <a href="index.html" class="homepage_button">Homepage</a>
 
   </div>
-  <main>
 
-    <div class="menu">
-      <article>
-        <table>
-          <thead>
-            <tr>
-              <th>Quarter</th>
-              <th>Course</th>
-              <th>Form</th>
-              <th>EC</th>
-              <th>Grade</th>
-            </tr>
-          </thead>
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <main>
+    <div class="info_block">
+
+      <div class="menu">
+        <article>
+          <table>
+            <thead>
+              <tr>
+                <th>Quarter</th>
+                <th>Course</th>
+                <th>Form</th>
+                <th>EC</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
           <tbody>
             <tr>
               <td rowspan="3">1</td>
-              </td>
-              <td>Program- & Career Orientation (PCO)</td>
-              <td>Assessment website</td>
-              <td>2.5</td>
-              <td></td>
-            </tr>
-            <tr>
-              <!-- Quarter 1 -->
-              <td>Computer Science Basics (CSB)</td>
-              <td>Written knowledge test </td>
-              <td>5</td>
-              <td></td>
-            </tr>
-            <tr>
-              <!-- Quarter 1 -->
-              <td>Programming Basics (PBA) </td>
-              <td>Case study exam</td>
-              <td>5</td>
-              <td></td>
-            </tr>
+            </td>
+            <td>Program- & Career Orientation (PCO)</td>
+            <td>Assessment website</td>
+            <td>2.5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <!-- Quarter 1 -->
+            <td>Computer Science Basics (CSB)</td>
+            <td>Written knowledge test </td>
+            <td>5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <!-- Quarter 1 -->
+            <td>Programming Basics (PBA) </td>
+            <td>Case study exam</td>
+            <td>5</td>
+            <td></td>
+          </tr>
             <tr>
               <td rowspan="2">2</td>
               <td rowspan="2">Object-Oriented programming (OOP)</td>
@@ -182,21 +167,21 @@
             </tr>
             <tr>
               <td rowspan="3">Quarter 4</td>
-              <td>Framework Project 2 (FPR2)</td>
+              <td rowspan="3">Framework Project 2 (FPR2)</td>
               <td>Portfolio (50%)</td>
               <td rowspan="3">10</td>
               <td></td>
             </tr>
             <tr>
               <!-- Quarter 4 -->
-              <td>Framework Project 2 (FPR2)</td>
+              <!-- Framework Project 2 (FPR2) -->
               <td>Assessment (25%)</td>
               <!-- 10 -->
               <td></td>
             </tr>
             <tr>
               <!-- Quarter 4 -->
-              <td>Framework Project 2 (FPR2)</td>
+              <!-- Framework Project 2 (FPR2) -->
               <td>Project (25%)</td>
               <!-- 10 -->
               <td></td>
@@ -226,10 +211,13 @@
           </tbody>
         </table>
         <h2>NBSA Boundry (0/60) (20/60 for test)</h2>
+        
         <progress min="0" max="60" value="20"></progress>
+        
       </article>
     </div>
-
+  </div>
+    
   </main>
 </body>
 

@@ -35,13 +35,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     width: 40%;
     height: auto;
     padding: 20px;
   }
 
-  img {
+  #profile_img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,8 +49,16 @@
     height: 250px;
     border-radius: 50%;
   }
+  #cat_img{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    left: 72%;
+    top: 33%;
+  }
 
-  img:hover {
+
+  #profile_img:hover {
     outline: 10px solid rgb(255, 255, 255);
     transition: 0.2s;
   }
@@ -84,6 +92,8 @@
     display: block;
     height: auto;
     width: 40%;
+    font-size: 25px;
+    padding: 15px;
   }
 
   #left_div {
@@ -97,25 +107,95 @@
   p {
     text-align: center;
     color: white;
-    margin-bottom: 100px;
+  }
+  .mid_links{
+    display:inline-block;
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .mid_links img{
+    display:block;
+    height: 50px;
+    width: 50px;
+    left: 42%;
+    border: none;
+    margin-bottom: 50px;
+  }
+  #ol_title{
+    all:initial;
+  }
+  #ol_container{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.527);
+    width: auto;
+    border: 1px solid black;
+  }
+    ul {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+article ul {
+    margin-left: 20px;
+    text-align: left;
+}
+hr {
+    width: 80%;
+    border-radius: 50%;
   }
 </style>
 
 <body>
+  
+  <div id="ol_container">
+    <h2 id="ol_title">Top 5 HTML Tags ranked!!!</h2>
+    <ol>
+      <li>div</li>
+      <li>img</li>
+      <li>body</li>
+      <li>p</li>
+      <li>head</li>
+    </ol>
+  </div>
+
   <div id="container">
     <h1>Damyan Dimitrov</h1>
     <figure>
-      <a href="profile.html"><img src="img/self-front.png"></a>
+      <a href="profile.html"><img src="img/self-front.png" id="profile_img"></a>
       <figcaption>^ TO PROFILE ^</figcaption>
     </figure>
   </div>
+
+  <img src="img/cat-img.jpg" id="cat_img">
+  
   <div class="info_div" id="left_div">
-    <h2>Why i like to study ICT</h2>
-    <p>Blah blah blah</p>
+    <h2>My motivation behind choosing ICT</h2>
+    <hr>
+    <p>I believe that the digital enviornment is and will play a major role in our daily lives and being able to understand and utilise it's possibilities will help me be a 
+      helpful member of society. Being able to create and maintain software will allow people's lives to be easier.
+      What I like most about programming is when the end product satisfies the users expectation and eases their life.
+    </p>
   </div>
+
+  <div class="mid_links">
+    <a href="https://www.linkedin.com/in/damyan-dimitrov-a79b0a213/" target="_blank"><img src="img/LinkedIn-logo.png"></a>
+    <a href="https://github.com/Damyan03" target="_blank"><img src="img/GitHub-logo.png"></a>
+  </div>
+
   <div class="info_div" id="right_div">
-    <h2>Why i like to do other thing</h2>
+    <h2>Why my cat is amazing</h2>
+    <hr>
+    <p>My cat Jesse is the best cat because my cat is fluffy. It likes to play outside from dusk till dawn and enjoys eating. My cat usually likes being pet but sometimes gets
+      angry. My cat has no programming experience and does not know how to use a computer but that's OK! Instead he knows how to climb trees and how to jump high.
+    </p>
   </div>
+
 </body>
 
 </html>
