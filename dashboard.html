@@ -14,15 +14,56 @@
     background-color: rgba(255, 200, 255, 0.5);
     border: double violet;
     position: relative;
-    left:20%;
-    top:10%;
+    left: 20%;
+    top: 10%;
   }
 
   #dashboard {
     font-weight: bold;
     margin-left: 25px;
   }
-</style>
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td:hover {
+    background-color: rgba(255, 242, 255, 0.5);
+  }
+
+  th {
+    text-align: left;
+    background-color: rgba(255, 226, 255, 0.5);
+  }
+
+  td {
+    border: 1px solid;
+  }
+
+  th {
+    font-size: 25px;
+  }
+  h2{
+    margin: 0 auto;
+  }
+  progress{
+    width: 100%;
+  }
+
+  /* Apply effects for EC Column
+    !not working!
+    -not centering some of the cells
+    tbody>tr>:nth-child(4) {
+      text-align: center;
+    }
+    */
+  </style>
 
 <body style="background-image:url(background/background-dashboard.jpg)">
 
@@ -62,113 +103,131 @@
   </div>
   <main>
 
-      <div class="menu">
-        <article>
-          <table>
+    <div class="menu">
+      <article>
+        <table>
+          <thead>
             <tr>
-              <th>Assessment</th>
+              <th>Quarter</th>
+              <th>Course</th>
               <th>Form</th>
               <th>EC</th>
               <th>Grade</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
+              <td rowspan="3">1</td>
+              </td>
               <td>Program- & Career Orientation (PCO)</td>
-              <td>Assessment website (Individual process assessment)</td>
+              <td>Assessment website</td>
               <td>2.5</td>
               <td></td>
             </tr>
             <tr>
+              <!-- Quarter 1 -->
               <td>Computer Science Basics (CSB)</td>
               <td>Written knowledge test </td>
               <td>5</td>
               <td></td>
             </tr>
             <tr>
+              <!-- Quarter 1 -->
               <td>Programming Basics (PBA) </td>
               <td>Case study exam</td>
               <td>5</td>
               <td></td>
             </tr>
             <tr>
-              <td>IT Personality Project Week 1 (PPW1)  </td>
-              <td>Portfolio</td>
-              <td>1.25</td>
+              <td rowspan="2">2</td>
+              <td rowspan="2">Object-Oriented programming (OOP)</td>
+              <td>Presentation (50%)</td>
+              <td rowspan="2">10</td>
               <td></td>
             </tr>
             <tr>
-              <td>IT Personality 1 (ITP1) </td>
-              <td>Portfolio </td>
-              <td>5</td>
+              <!-- Quarter 2 -->
+              <!-- Object-Oriented programming (OOP) -->
+              <td>Case study exam (50%)</td>
+              <!-- 10 -->
               <td></td>
             </tr>
             <tr>
-              <td>Object-Oriented programming (OOP)</td>
-              <td>Presentation</td>
-              <td>5</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Object-Oriented programming (OOP)</td>
-              <td>Case study exam</td>
-              <td>5</td>
-              <td></td>
-            </tr>
-            <tr>
+              <td rowspan="4">3</td>
               <td>Framework Development 1 (FDE1)</td>
               <td>Case study exam</td>
               <td>5</td>
               <td></td>
             </tr>
             <tr>
-              <td>Framework Project 1 (FPR1)</td>
-              <td>Criterium based interview</td>
-              <td>2.5</td>
+              <!-- Quarter 3 -->
+              <td rowspan="3">Framework Project 1 (FPR1)</td>
+              <td>Criterium based interview (33%)</td>
+              <td rowspan="3">7.5</td>
               <td></td>
             </tr>
             <tr>
-              <td>Framework Project 1 (FPR1)</td>
-              <td>Assignment</td>
-              <td>2.5</td>
+              <!-- Quarter 3 -->
+              <!-- Framework Project 1 (FPR1) -->
+              <td>Assignment (33%)</td>
+              <!-- 7.5 -->
               <td></td>
             </tr>
             <tr>
-              <td>Framework Project 1 (FPR1)</td>
-              <td>Case study exam</td>
-              <td>2.5</td>
+              <!-- Quarter 3 -->
+              <!-- Framework Project 1 (FPR1) -->
+              <td>Case study exam (33%)</td>
+              <!-- 7.5 -->
               <td></td>
             </tr>
             <tr>
+              <td rowspan="3">Quarter 4</td>
               <td>Framework Project 2 (FPR2)</td>
-              <td>Final delivery</td>
-              <td>2.5</td>
+              <td>Portfolio (50%)</td>
+              <td rowspan="3">10</td>
               <td></td>
             </tr>
             <tr>
+              <!-- Quarter 4 -->
               <td>Framework Project 2 (FPR2)</td>
-              <td>Report of acceptance tests and optional assessments</td>
-              <td>2.5</td>
+              <td>Assessment (25%)</td>
+              <!-- 10 -->
               <td></td>
             </tr>
             <tr>
+              <!-- Quarter 4 -->
               <td>Framework Project 2 (FPR2)</td>
-              <td>IT Development portfolio</td>
-              <td>5</td>
+              <td>Project (25%)</td>
+              <!-- 10 -->
               <td></td>
             </tr>
             <tr>
-              <td>IT Personality International week (PIW)</td>
+              <td rowspan="2">Whenever</td>
+              <td>Personality 1 (PR End of quartile 1)</td>
               <td>Portfolio</td>
               <td>1.25</td>
               <td></td>
             </tr>
             <tr>
-              <td>IT Personality 2 (ITP2)</td>
+              <td>Personality 2 (PR End of quartile 3)</td>
               <td>Portfolio</td>
               <td>1.25</td>
               <td></td>
             </tr>
-          </table>
-        </article>
+            <tr>
+              <td>Full year</td>
+              <td>Personal Professional Development</td>
+              <td>Portfolio</td>
+              <td>12.5</td>
+              <td></td>
+            </tr>
+            <td colspan="3">Total ECs</td>
+            <td colspan="2"></td>
+          </tbody>
+        </table>
+        <h2>NBSA Boundry (0/60) (20/60 for test)</h2>
+        <progress min="0" max="60" value="20"></progress>
+      </article>
     </div>
 
   </main>
