@@ -29,7 +29,7 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
 }
 
@@ -98,49 +98,14 @@ ul a:hover {
     background-image: linear-gradient(rgb(255, 184, 184), rgb(255, 104, 104));
 }
 
-/*.menu {
-
-    background-image: linear-gradient(to right, transparent, lightgreen, transparent);
-    border-top-style: double;
-    border-top-color: green;
-    border-bottom-style: double;
-    border-bottom-color: green;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 80%;
-    font-size: 20px;
-    width: 80%;
-}
-#self_img {
-    position:absolute;
-    top: 60px;
-    left: 1000px;
-    width: 20%;
-    border: 5px solid white;
-    z-index: 1;
-}*/
 .menu {
     display:inline-block;
-    background-color: rgba(144, 238, 144, 0.5);
-    border: green double;
     border-radius: 10px;
     font-size: 20px;
-    width: 50%;
+    width: auto;
 }
-#menu_right{
-    position: relative;
-    left:10%;
-    bottom: 40%;
-}
-#menu_left{
-    position: relative;
-    bottom: 55%;
-}
-
-#menu_mid{
-    position: relative;
-    left: 25%;
-    top: 30%;
+tr:hover{
+    background-color: rgba(255, 242, 255, 0.5);
 }
 .info_block{
     height: 500px;
@@ -175,7 +140,7 @@ body {
 
 main {
     position: absolute;
-    height: 1620px;
+    height: calc(100% - 104px - 40px);
     width: calc(100% - 262px - 40px);
     left: 262px;
     top: 104px;
@@ -205,4 +170,8 @@ ul {
     display: table;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+article ul {
+    margin-left: 20px;
+    text-align: left;
 }
