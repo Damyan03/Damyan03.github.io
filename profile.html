@@ -11,14 +11,24 @@
 </head>
 
 <style>
-  .menu {
-    background-color: rgba(144, 238, 144, 0.5);
-    border: green solid;
-    width: 50%;
+  body{
+    background-attachment: scroll;
   }
+  table,ul{
+    color: white;
+    font-size: 36px;
+
+  }
+  .person_info_que{
+    text-align: left;
+  }
+  .person_info_ans{
+    text-align: right;
+  }
+  
 </style>
 
-<body style="background-image: url(background/background-profile.png)">
+<body style="background-image: url(background/background-profile-test.png)">
 
   <div class="sidenav">
 
@@ -56,9 +66,24 @@
       <div class="menu">
         <article>
           <h2>Personal information</h2>
-          <p><strong>Name: </strong>Damyan Dimitrov</p>
+          <hr>
+          <!-- <p><strong>Name: </strong>Damyan Dimitrov</p>
           <p><strong>Age: </strong>19</p>
-          <p><strong>Nationality: </strong>Bulgarian</p>
+          <p><strong>Nationality: </strong>Bulgarian</p> -->
+          <table>
+            <tr>
+              <td class="person_info_que">Name: </td>
+              <td class="person_info_ans">Damyan Dimitrov </td>
+            </tr>
+            <tr>
+              <td class="person_info_que">Age:</td>
+              <td class="person_info_ans">19</td>
+            </tr>
+            <tr>
+              <td class="person_info_que">Nationality: </td>
+              <td class="person_info_ans">Bulgarian</td>
+            </tr>
+          </table>
         </article>
       </div>
     </div>
@@ -66,12 +91,15 @@
     <div class="info_block">
       <div class="menu">
         <article>
-          <p><strong>Interests:</strong></p>
+          <h2>Things I enjoy</h2>
+          <hr>
           <ul>
             <li>Games</li>
             <li>Travel</li>
             <li>Drawing</li>
             <li>Music</li>
+            <li>Reading</li>
+            <li>Solving</li>
           </ul>
         </article>
       </div>
@@ -82,6 +110,7 @@
       <div class="menu">
         <article>
           <h2>Extra-curricular activities</h2>
+          <hr>
           <p>I believe that eventually I will work alongside my studies, but I am uncertain of when I will start.
             <br> In my spare time I like to read, watch movies and play games.
             <br>I will look to prioritise my studies over the leisure activities so I can be successful.
