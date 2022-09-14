@@ -1,10 +1,11 @@
-html,
-body {
-    height: 100%;
-}
+/* ---General--- */
 
 * {
     box-sizing: border-box;
+}
+
+html{
+    height: 100%;
 }
 
 header {
@@ -15,102 +16,14 @@ header {
     margin-left: 15%;
 }
 
-h1 {
-    text-align: center;
-    color: rgb(240, 248, 255);
-    margin: auto;
-    font-size: 80px;
-    text-shadow: 2px 2px black;
-}
-h2{
-    text-shadow: 2px 2px black;
-    letter-spacing: 2px;
-}
-
-h2,
-p,
-u{
-    color: white;
-    font-size: 36px;
-}
-ul{
-    width: 50%;
-    margin: auto;
-}
-
 hr {
     width: 80%;
     border-radius: 50%;
 }
 
-h2,
-h3,
-p {
-    text-align: center;
-}
-
-/* --------------SIDE NAV-------------- */
-.sidenav {
-    display: inline-flex;
-    position: fixed;
-    flex-direction: column;
-    background-color: white;
-    background-size: cover;
-    border-right: 1px solid black;
-    height: 100%;
-    width: 15%;
-}
-
-.sidenav h2{
-    color: black;
-}
-
-/* ---main links--- */
-.sidenav a {
-    display: block;
-    text-align: center;
-    padding: 20px;
-
-}
-
-.sidenav_links a:hover {
-    font-weight: bold;
-}
-
-/* ---aside links--- */
-.sidenav_aside_links {}
-
-.sidenav_aside_links a {
-    background-image: linear-gradient(rgb(238, 238, 238), rgb(218, 218, 218));
-}
-
-.sidenav_aside_links a:hover {
-    font-weight: bold;
-}
-
-/* --- */
-
-.homepage_button {
-    margin-top: auto;
-    font-size: 26px;
-    text-decoration: none;
-}
-
-/* --------- */
-#profile {
-    background-image: linear-gradient(to left, rgb(184, 255, 196), rgb(89, 255, 120));
-}
-
-#blog {
-    background-image: linear-gradient(rgb(172, 208, 255), rgb(80, 156, 255));
-}
-
-#dashboard {
-    background-image: linear-gradient(rgb(255, 200, 252), rgb(255, 111, 248));
-}
-
-#faq {
-    background-image: linear-gradient(rgb(255, 184, 184), rgb(255, 104, 104));
+ul {
+    width: 50%;
+    margin: auto;
 }
 
 .menu {
@@ -136,8 +49,10 @@ img {
     margin-right: auto;
     border: 5px solid white;
 }
+
 body {
     margin: 0;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -150,7 +65,138 @@ main {
     margin-left: 15%;
 }
 
+/* ---Text formatting--- */
+h1 {
+    margin: auto;
+    text-align: center;
+    color: rgb(240, 248, 255);
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+}
+
+h2,h3,p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* --------------SIDE NAV-------------- */
+.sidenav {
+    display: inline-flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: rgb(44, 51, 51);
+    border-right: 1px solid black;
+    height: 100%;
+    width: 15%;
+}
+
+.sidenav hr {
+    width: 100%;
+    border-radius: initial;
+    margin:auto;
+    margin-top: 10%;
+}
+
+/* ---main links--- */
+.sidenav a {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    width: 90%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 26px;
+    transition: 0.2s;
+    color: black;
+}
+.sidenav_links{
+    margin-top: 10%;
+}
+
+/* ---aside links--- */
+.sidenav_aside_links {
+    padding: 0px 20px 0px 20px;
+}
+
+.sidenav_aside_links a {
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(218, 218, 218));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.sidenav_aside_links a:hover {
+    font-weight: bold;
+}
+
+/* --- */
+.homepage_button{
+    background-image: url(../background/background-homepage-button.jpg);
+    background-size: cover;
+    background-position-y: 15%;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    width: 90%;
+    text-decoration: none;
+    margin: auto;
+}
+.homepage_button a{
+    margin: auto;
+    font-size: 26px;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 100%;
+}
+.homepage_button a:hover{
+    backdrop-filter: blur(3px);
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+/* ---------------------------- */
+#profile {
+    background-color: rgb(142, 255, 160, 0.5);
+}
+#profile:hover{
+    background-color: rgb(142, 255, 160);
+}
+
+#blog {
+    background-color: rgb(142, 187, 255, 0.5);
+}
+#blog:hover {
+    background-color: rgb(142, 187, 255);
+}
+
+#dashboard {
+    background-color: rgb(255, 142, 255, 0.5);
+}
+#dashboard:hover {
+    background-color: rgb(255, 142, 255);
+}
+
+#faq {
+    background-color: rgb(255, 210, 142, 0.5);
+}
+#faq:hover {
+    background-color: rgb(255, 210, 142);
+}
+
 #hz_logo {
     height: 8%;
     margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 10px
 }

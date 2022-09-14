@@ -6,26 +6,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles/styles.css" rel="stylesheet" />
-  <title>Damyan | Profile</title>
+  <link href="styles/styles.css" rel="stylesheet">
+  <title>Damyan | Blog</title>
 </head>
 
 <style>
-  body{
+  /* ---General--- */
+  body {
     background-attachment: scroll;
   }
-  table,ul{
+
+  #profile {
+    background-color: rgb(142, 255, 160);
+  }
+
+  /* ---Text formatting--- */
+  table,
+  ul {
     color: white;
     font-size: 36px;
+    text-shadow: 2px 2px black;
 
   }
-  .person_info_que{
+
+  .person_info_que {
     text-align: left;
   }
-  .person_info_ans{
+
+  .person_info_ans {
     text-align: right;
   }
-  
+
+  h2,
+  p {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 36px;
+  }
+
+  h2 {
+    letter-spacing: 2px;
+  }
 </style>
 
 <body style="background-image: url(background/background-profile-test.png)">
@@ -34,7 +55,6 @@
 
     <img src="img/hz-logo.png" alt="hz_logo" id="hz_logo">
 
-    <h2 class="sidenav_title">Navigation</h2>
     <nav class="sidenav_links">
       <a href="profile.html" id="profile">Profile</a>
       <a href="blog.html" id="blog">Blog</a>
@@ -42,16 +62,20 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <h2 class="sidenav_aside_title">Aside links</h2>
+    <hr>
+
     <nav class="sidenav_aside_links">
-      <a href="https://hz.nl/en" target="_blank">HZ Website</a>
-      <a href="https://portal.hz.nl/en/" target="_blank">HZ Portal</a>
       <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
-      <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097"
-        target="_blank">HZ Webshop</a>
+      <a href="https://hz.osiris-student.nl/#/home" target="_blank">HZ Study progress</a>
+      <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT Github</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT IR Document</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT CER Document</a>
+      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel" target="_blank">ICT Teams</a>
     </nav>
 
-    <a href="index.html" class="homepage_button">Homepage</a>
+    <div class="homepage_button">
+      <a href="index.html">Homepage</a>
+    </div>
 
   </div>
 
@@ -62,14 +86,11 @@
   <main>
 
     <div class="info_block">
-      <img src="img/self-img.jpg" alt="self_img" style="width: 30%;">
+      <img src="img/self-snowboard.jpg" alt="self_img" style="width: 30%;">
       <div class="menu">
         <article>
           <h2>Personal information</h2>
           <hr>
-          <!-- <p><strong>Name: </strong>Damyan Dimitrov</p>
-          <p><strong>Age: </strong>19</p>
-          <p><strong>Nationality: </strong>Bulgarian</p> -->
           <table>
             <tr>
               <td class="person_info_que">Name: </td>
@@ -103,7 +124,7 @@
           </ul>
         </article>
       </div>
-      <img src="img/party-img.jpg" alt="party_img" style="width: 40%;">
+      <img src="img/party.jpg" alt="party_img" style="width: 40%;">
     </div>
 
     <div class="info_block">
@@ -120,7 +141,7 @@
     </div>
 
   </main>
-  
+
 </body>
 
 </html>

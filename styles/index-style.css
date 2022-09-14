@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url(../../background/background-homepage-test.jpg);
+    background-image: url(../../background/background-homepage.jpg);
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -96,17 +96,15 @@ figcaption {
     height: 25%;
 }
 
-/* ---List--- */
-#ol_title {
-    all: initial;
+/* ---Table--- */
+table {
+    color:white;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
 }
-
-#ol_container {
-    position: absolute;
-    left: 100px;
-    top: 100px;
-    background-color: rgba(255, 255, 255, 0.527);
-    border: 1px solid black;
+td{
+    border: 1px  solid white;
 }
 
 /* ---Container--- */
