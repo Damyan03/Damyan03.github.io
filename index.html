@@ -5,8 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/index-style.css" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/styles.css">
+
   <title>Damyan | Profile</title>
 
   <script src="https://kit.fontawesome.com/71ba9e514f.js" crossorigin="anonymous"></script>
@@ -14,139 +15,7 @@
 </head>
 
 <style>
-  h1 {
-    font-size: 90px;
-  }
-
-  #profile_container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 40%;
-    height: auto;
-    padding: 20px;
-  }
-
-  #profile_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-top: 100px;
-  }
-
-  #profile_img:hover {
-    outline: 10px solid rgb(255, 255, 255);
-    transition: 0.2s;
-  }
-
-  figure {
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  figcaption {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    color: rgb(136, 136, 136);
-    text-shadow: 2px 2px black;
-    /*outline*/
-    letter-spacing: 2px;
-  }
-
-  body {
-    background-image: url(background/background-homepage-test.jpg);
-    width: 100%;
-    margin: 0 auto;
-    float: left;
-    background-attachment: scroll;
-  }
-
-  .info_div {
-    display: block;
-    height: auto;
-    font-size: 25px;
-    padding: 20px 60px 20px 60px;
-
-  }
-
-  .mid_links {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-
-  .mid_links img {
-    display: block;
-    height: 50px;
-    width: 50px;
-    left: 42%;
-    border: none;
-    margin-bottom: 50px;
-  }
-
-  #ol_title {
-    all: initial;
-  }
-
-  #ol_container {
-    position: absolute;
-    left: 100px;
-    top: 100px;
-    background-color: rgba(255, 255, 255, 0.527);
-    width: auto;
-    border: 1px solid black;
-  }
-
-  #git_logo {
-    border-radius: 5px;
-  }
-
-  #arrow_down {
-    height: 25%;
-  }
-
-  .footer_container {
-    display: flex;
-    background-color: rgb(41, 41, 41);
-    gap: 16px;
-  }
-
-  .footer_container p {
-    font-size: 20px;
-    text-align: left;
-  }
-
-  .footer_right {
-    margin: auto;
-    margin-right: 0px;
-  }
-
-  .footer_left {
-    align-items: center;
-    margin: auto;
-      margin-left: 10px;
-  }
-
-  i {
-    color: white;
-  }
-
-  .footer_right i {
-    margin-right: 10px;
-  }
-
-  .f_contact {
-    display: flex;
-    align-items: center;
-    gap:16px;
-  }
+  
 </style>
 
 <body>
@@ -165,18 +34,12 @@
   <div id="profile_container">
     <h1>Damyan Dimitrov</h1>
     <figure>
-      <a href="profile.html"><img src="img/self-front.png" id="profile_img" class="img_border"></a>
+      <a href="profile.html"><img src="img/self-front.png" id="profile_img"></a>
       <figcaption>^ TO PROFILE ^</figcaption>
     </figure>
   </div>
 
-  <!-- <div class="mid_links">
-    <a href="https://www.linkedin.com/in/damyan-dimitrov-a79b0a213/" target="_blank"><img
-        src="img/LinkedIn-logo.png"></a>
-    <a href="https://github.com/Damyan03" target="_blank"><img src="img/GitHub-logo.png" id="git_logo"></a>
-  </div> -->
-
-  <a href="#test"><img src="img/arrow-down.jpg" id="arrow_down"></a>
+  <a href="#page_bottom"><img src="img/arrow-down.jpg" id="arrow_down"></a>
 
   <!-- <div class="info_div" id="right_div">
     <h2>Why my cat is amazing</h2>
@@ -202,29 +65,40 @@
     <p>I believe that the digital enviornment is and will always play a major role in our daily lives and being able to
       understand and utilise it's possibilities will help me be a respected member of society.
       What I like most about programming is when the end product satisfies the users expectation.
-      My goal is to be able to create something which is of use to many people and that will ease their lives even if just a bit.
+      My goal is to be able to create something which is of use to many people and that will ease their lives even if
+      just a bit.
     </p>
   </div>
 
-  <div id="test"></div>
+  <div id="page_bottom"></div>
+
 </body>
 
 <footer>
+
   <div class="footer_container">
+
     <div class="footer_left">
       <div class="f_contact">
-        <a href="mailto:damyandimitrov03@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-2x"></i></a><p>damyandimitrov03@gmail.com</p>
+        <a href="mailto:damyandimitrov03@gmail.com" target="_blank" rel="noopener noreferrer"><i
+            class="fa-solid fa-envelope fa-2x"></i></a>
+        <p>damyandimitrov03@gmail.com</p>
         <i class="fa-solid fa-phone fa-2x"></i>
         <p>+359 879 28 6516</p>
       </div>
     </div>
+
     <div class="footer_right">
-      <a href="https://www.linkedin.com/in/damyan-dimitrov-a79b0a213/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/damyan-dimitrov-a79b0a213/" target="_blank"><i
+          class="fa-brands fa-linkedin fa-2x"></i></a>
       <a href="https://github.com/Damyan03" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100000924364554" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100000924364554" target="_blank"><i
+          class="fa-brands fa-facebook fa-2x"></i></a>
       <a href="https://www.instagram.com/crimson_1695/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
     </div>
+
   </div>
+
 </footer>
 
 </html>

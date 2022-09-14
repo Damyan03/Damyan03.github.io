@@ -1,0 +1,147 @@
+/* ---General--- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background-image: url(../../background/background-homepage-test.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-attachment: scroll;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.info_div {
+    display: block;
+    height: auto;
+    font-size: 25px;
+    padding: 20px 60px 20px 60px;
+
+}
+
+/* ---Text formatting--- */
+h1 {
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 90px;
+    text-shadow: 2px 2px black;
+}
+
+h2,
+p {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+hr {
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* ---Title--- */
+#profile_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 40%;
+    height: auto;
+    padding: 20px;
+}
+
+figure {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#profile_img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 5px solid white;
+}
+
+#profile_img:hover {
+    outline: 10px solid rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+figcaption {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(136, 136, 136);
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+}
+
+#arrow_down {
+    height: 25%;
+}
+
+/* ---List--- */
+#ol_title {
+    all: initial;
+}
+
+#ol_container {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.527);
+    border: 1px solid black;
+}
+
+/* ---Container--- */
+.footer_container {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    gap: 16px;
+}
+
+.footer_container p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer_right {
+    margin: auto;
+    margin-right: 0px;
+}
+
+.footer_left {
+    align-items: center;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.f_contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+i {
+    color: white;
+}
+
+.footer_right i {
+    margin-right: 10px;
+}
