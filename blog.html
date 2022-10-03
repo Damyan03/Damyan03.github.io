@@ -8,6 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="styles/styles.css" rel="stylesheet">
   <title>Damyan | Blog</title>
+
+  <script src="https://kit.fontawesome.com/71ba9e514f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <style>
@@ -20,6 +23,10 @@
     border: solid blue;
     vertical-align: top;
     width: 100%;
+    font-size: 30px;
+  }
+  .menu:hover {
+    background-color: rgba(206, 236, 255, 0.5);
   }
 
   .info_block {
@@ -27,10 +34,15 @@
     gap: 12px;
   }
 
-  h2, p {
+  h2,
+  p {
     margin: 0 auto;
+    color: black;
   }
-  article{margin: 10px}
+
+  article {
+    margin: 10px
+  }
 </style>
 
 <body style="background-image:url(background/background-blog.jpg);background-position-x: 90px">
@@ -46,18 +58,17 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <hr>
+    <div class="sidenav_hr">
+      <img src="img/sidenav-hr.png" alt="sidenav-separator">
+    </div>
 
     <nav class="sidenav_aside_links">
       <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://hz.osiris-student.nl/#/home" target="_blank">HZ Study progress</a>
       <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT Github</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
-        target="_blank">ICT IR Document</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
-        target="_blank">ICT CER Document</a>
-      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel"
-        target="_blank">ICT Teams</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT IR Document</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf" target="_blank">ICT CER Document</a>
+      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel" target="_blank">ICT Teams</a>
     </nav>
 
     <div class="homepage_button">
@@ -110,7 +121,8 @@
         <a href="blog/blog-study-choice.html">
           <article>
             <h2>Study choice</h2>
-            <p>The reason I made my study choice for IT is because I could actually see the impact it has on our daily lives...</p>
+            <p>The reason I made my study choice for IT is because I could actually see the impact it has on our daily
+              lives...</p>
           </article>
         </a>
       </div>

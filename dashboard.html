@@ -29,15 +29,15 @@
     text-align: center;
   }
 
-  td:hover {
-    background-color: rgba(255, 242, 255, 0.5);
-  }
-
   th {
-    text-align: left;
     background-color: #ffeeff80;
     font-size: 25px;
     border: 1px solid;
+  }
+
+  tbody:hover td[rowspan],
+  tr:hover td {
+    background-color: rgba(255, 242, 255, 0.5);
   }
 
   td {
@@ -51,11 +51,48 @@
   progress {
     width: 100%;
   }
-  .failed{
+
+  .failed {
     background-color: rgba(255, 0, 0, 0.5);
   }
-  .passed{
+
+  .passed {
     background-color: rgba(0, 255, 0, 0.5);
+  }
+  .nbsa_container{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 75% 25%;
+    height: 24px;
+    border: 1px solid black;
+  }
+  .nbsa_bar{
+    background-color: rgb(255, 147, 223);
+    text-align: center;
+    width: 44%;
+    height: 100%;
+    border-right: 1px solid black;
+  }
+  .nbsa_failing{
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid black;
+    background-color: rgb(255, 168, 168);
+  }
+  .nbsa_passing{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(168, 255, 183);;;
+  }
+  
+  .framework_dev{
+    border-bottom: none;
+  }
+  .framework_pro{
+    border-top: none;
+    text-align: center;
+    position: relative;
+    bottom: 13px;
   }
 
   /* Apply effects for EC Column
@@ -80,15 +117,20 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <hr>
+    <div class="sidenav_hr">
+      <img src="img/sidenav-hr.png" alt="sidenav-separator">
+    </div>
 
     <nav class="sidenav_aside_links">
       <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://hz.osiris-student.nl/#/home" target="_blank">HZ Study progress</a>
       <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT Github</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT IR Document</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT CER Document</a>
-      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel" target="_blank">ICT Teams</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+        target="_blank">ICT IR Document</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+        target="_blank">ICT CER Document</a>
+      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel"
+        target="_blank">ICT Teams</a>
     </nav>
 
     <div class="homepage_button">
@@ -117,6 +159,7 @@
                 <th>Grade</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <td rowspan="3">1</td>
@@ -139,6 +182,8 @@
                 <td>5</td>
                 <td class="failed">2</td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
                 <td rowspan="2">2</td>
                 <td rowspan="2">Object-Oriented programming (OOP)</td>
@@ -153,15 +198,19 @@
                 <!-- 10 -->
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
-                <td rowspan="4">3</td>
+                <td class="framework_dev"></td>
                 <td>Framework Development 1 (FDE1)</td>
                 <td>Case study exam</td>
                 <td>5</td>
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
-                <!-- Quarter 3 -->
+                <td rowspan="3" class="framework_pro">3</td>
                 <td rowspan="3">Framework Project 1 (FPR1)</td>
                 <td>Criterium based interview (33%)</td>
                 <td rowspan="3">7.5</td>
@@ -181,8 +230,10 @@
                 <!-- 7.5 -->
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
-                <td rowspan="3">Quarter 4</td>
+                <td rowspan="3">4</td>
                 <td rowspan="3">Framework Project 2 (FPR2)</td>
                 <td>Portfolio (50%)</td>
                 <td rowspan="3">10</td>
@@ -202,6 +253,8 @@
                 <!-- 10 -->
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
                 <td rowspan="2">Whenever</td>
                 <td>Personality 1 (PR End of quartile 1)</td>
@@ -215,6 +268,8 @@
                 <td>1.25</td>
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <tr>
                 <td>Full year</td>
                 <td>Personal Professional Development</td>
@@ -222,13 +277,20 @@
                 <td>12.5</td>
                 <td></td>
               </tr>
+            </tbody>
+            <tbody>
               <td colspan="3">Total ECs</td>
               <td colspan="2"></td>
             </tbody>
           </table>
 
           <h2>NBSA Boundry (0/60) (20/60 for test)</h2>
-          <progress min="0" max="60" value="20"></progress>
+          <div class="nbsa_container">
+            <div class="nbsa_failing">
+              <div class="nbsa_bar">33%</div>
+            </div>
+            <div class="nbsa_passing"></div>
+          </div>
 
         </article>
 

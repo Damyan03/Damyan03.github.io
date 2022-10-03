@@ -14,10 +14,20 @@
   .menu {
     background-color: rgba(255, 212, 133, 0.5);
     border: solid orange;
+    vertical-align: top;
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
   }
 
   #faq {
     background-color: rgb(255, 210, 142);
+  }
+  .info_block{
+    padding: 5px;
+  }
+  .menu:hover {
+    background-color: rgba(255, 230, 183, 0.5);
   }
 </style>
 
@@ -34,15 +44,20 @@
       <a href="faq.html" id="faq">FAQ</a>
     </nav>
 
-    <hr>
+    <div class="sidenav_hr">
+      <img src="img/sidenav-hr.png" alt="sidenav-separator">
+    </div>
 
     <nav class="sidenav_aside_links">
       <a href="https://learn.hz.nl/my/" target="_blank">HZ Learn</a>
       <a href="https://hz.osiris-student.nl/#/home" target="_blank">HZ Study progress</a>
       <a href="https://github.com/HZ-HBO-ICT" target="_blank">ICT Github</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT IR Document</a>
-      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf" target="_blank">ICT CER Document</a>
-      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel" target="_blank">ICT Teams</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/IR-CER-HZ-B-HBO-ICT-full-time-2022-2023-DEF.pdf"
+        target="_blank">ICT IR Document</a>
+      <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+        target="_blank">ICT CER Document</a>
+      <a href="https://teams.microsoft.com/_?culture=en-us&country=WW&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel"
+        target="_blank">ICT Teams</a>
     </nav>
 
     <div class="homepage_button">
@@ -58,61 +73,89 @@
 
   <main>
     <div class="info_block">
-
       <div class="menu">
-        <article>
-          <p>Q: Who can I message regarding financial matters in HZ.
-            <br>A: You can message fin@hz.nl
-          </p>
-        </article>
-        <article>
-          <p>Q: Where can I find the timetable?
-            <br>A: You can find it on MyHZ where you can add it on the sidebar.
-          </p>
-        </article>
-        <article>
-          <p>Q: Do I get water bottle.
-            <br>A: Yes
-          </p>
-        </article>
-        <article>
-          <p>Q: How can you print a document from your laptop at HZ?
-            <br>A: Upload all the files you would like to print to <a href="https://print.hz.nl/">HZ Print</a>, then
-            choose the options you would like then submit your print request.
-            <br>Go to a printer in the building, scan your card then select the printing option.
-          </p>
-        </article>
-        <article>
-          <p>Q: How can you scan a document a send it to your laptop at HZ?
-            <br>A: Information regarding document scanning available <a
-              href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8a56d47dcbd0ffb9cdf78f20b&origin=searchPreview">Here</a>.
-          </p>
-        </article>
-        <article>
-          <p>Q: How can I buy something (like when I sign up for the IT introduction event at Friday 16/09) on the HZ
-            web
-            shop?
-            <br>A: You can do that by going to the <a
-              href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097">HZ
-              Webshop</a> page.
-          </p>
-        </article>
-        <section>
-          <p>Q: Where can I find the latest instructions on what to do when you are sick / show symptoms of COVID?
-            <br>A: Information regarding COVID available <a
-              href="https://hz.nl/en/current-affairs/coronavirus">Here</a>.
-          </p>
-        </article>
-        <article>
-          <p>Q: How can you book a project space in one of the wings?
-            <br>A: You can do that from <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Here</a>.
-          </p>
-        </article>
-        <article>
-          <p>Q: What are the instructions if you want to park your car at the HZ parking lot?
-            <br>A: You need to use your student ID at the barriers for them to open.
-          </p>
-        </article>
+        <details>
+          <summary>Q: Who can I message regarding financial matters in HZ.</summary>
+          A: You can message fin@hz.nl
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: Where can I find the timetable?</summary>
+          A: You can find it on MyHZ where you can add it on the sidebar.
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: Do I get water bottle.</summary>
+          A: Yes
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: How can you print a document from your laptop at HZ?</summary>
+          A: Upload all the files you would like to print to <a href="https://print.hz.nl/">HZ Print</a>, then
+          choose the options you would like then submit your print request.
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: How can you scan a document a send it to your laptop at HZ?</summary>
+          A: Information regarding document scanning available <a
+            href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8a56d47dcbd0ffb9cdf78f20b&origin=searchPreview">Here</a>.
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: How can I buy something (like when I sign up for the IT introduction event at Friday 16/09) on the
+            HZ webshop?</summary>
+          A: Information regarding document scanning available <a
+            href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=d065a4e8a56d47dcbd0ffb9cdf78f20b&origin=searchPreview">Here</a>.
+        </details>
+      </div>
+    </div>
+
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: Where can I find the latest instructions on what to do when you are sick / show symptoms of COVID?
+          </summary>
+          A: Information regarding COVID available <a href="https://hz.nl/en/current-affairs/coronavirus">Here</a>.
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: How can you book a project space in one of the wings?</summary>
+          A: You can do that from <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Here</a>.
+        </details>
+      </div>
+    </div>
+
+    <div class="info_block">
+      <div class="menu">
+        <details>
+          <summary>Q: What are the instructions if you want to park your car at the HZ parking lot?</summary>
+          A: You need to use your student ID at the barriers for them to open.
+        </details>
       </div>
     </div>
   </main>
