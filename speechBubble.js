@@ -1,4 +1,4 @@
-function clickTiger(){
+function clickTiger() {
     if(document.querySelector("#tiger_speech_bubble").className === "hidden"){
         document.querySelector("#tiger_speech_bubble").className = "";
     }else{

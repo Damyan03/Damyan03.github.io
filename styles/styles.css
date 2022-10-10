@@ -54,7 +54,7 @@ body {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 main {
@@ -82,9 +82,6 @@ h2,h3,p{
 a{
     text-decoration: none;
 }
-
-
-
 
 /* --------------SIDE NAV-------------- */
 .sidenav {
@@ -148,7 +145,7 @@ a{
     font-weight: bold;
 }
 
-/*----Back button---- */
+/*----Blog Back button---- */
 .back_button{
     position:absolute;
     color:white;
