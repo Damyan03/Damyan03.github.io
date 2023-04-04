@@ -221,3 +221,11 @@ a{
     background-color: white;
     border-radius: 10px
 }
+
+.breadcrumbs{
+    position: absolute;
+    font-size: 33px;
+    left: 300px;
+    top: 70px;
+    color:white;
+}
